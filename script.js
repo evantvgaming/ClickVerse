@@ -1,5 +1,12 @@
 console.log("ClickVerse chargé.");
 
+let firstClick = true;
+
 document.addEventListener("click", () => {
-  console.log("Clic détecté.");
+  if (firstClick) {
+    document.body.style.background = "#111";
+    firstClick = false;
+  }
+
+  hotdogMode();
 });
