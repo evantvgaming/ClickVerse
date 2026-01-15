@@ -10,3 +10,13 @@ document.addEventListener("click", () => {
 
   hotdogMode();
 });
+let toggle = true;
+
+document.addEventListener("click", () => {
+  if (toggle) {
+    texteMode();
+  } else {
+    // rien d’autre pour l’instant
+  }
+  toggle = !toggle;
+});
