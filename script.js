@@ -1,22 +1,9 @@
-console.log("ClickVerse chargé.");
-
-let firstClick = true;
-
 document.addEventListener("click", () => {
-  if (firstClick) {
-    document.body.style.background = "#111";
-    firstClick = false;
-  }
+  const rand = Math.random();
 
-  hotdogMode();
-});
-let toggle = true;
-
-document.addEventListener("click", () => {
-  if (toggle) {
+  if (rand < 0.5) {
     texteMode();
   } else {
-    // rien d’autre pour l’instant
+    hotdogMode();
   }
-  toggle = !toggle;
 });
